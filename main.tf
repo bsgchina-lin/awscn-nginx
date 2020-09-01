@@ -26,7 +26,7 @@ resource "aws_instance" "web" {
 
 # 添加 SSH 登录密钥
 resource "aws_key_pair" "ssh" {
-  key_name   = "webadmin"
+  key_name   = "admin"
   public_key = file(var.public_key)
 }
 
